@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script type="text/javascript" src="https://raw.githack.com/AceMetrix/jquery-deparam/81428b3939c4cbe488202b5fa823ad661d64fb49/jquery-deparam.js"></script>
+<script>
+
+ $.deparam(location.search.slice(1))
+
+var obj = {name: "osama", role: "user"}
+var controls = {};
+
+
+if (obj.role == "user") {
+	document.write("You are user")
+} else if (obj.role == "admin") {
+	controls["operation"] = false
+	document.write("You are an admin")
+	obj.controls = true
+}
+
+if (controls.operation == true) {
+	eval(input)
+}
+
+</script>
+</html>
