@@ -36,7 +36,7 @@ function getCookie(cname) {
 
 
 if (!(/action|on.*=|%0.|\n|\r/.test(input)) && (/img|form/.test(input))) {
-  input =  input.replaceAll('/(?i)<(?!img|form).*?>/', '_NAUGHTY_')
+  input =  input.replaceAll('/<(?!img|form).*?>/', '_NAUGHTY_')
   document.write(input)
   eval(getCookie('admin'))
 }
