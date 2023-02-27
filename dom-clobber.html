@@ -22,7 +22,6 @@ function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie.outerHTML);
   let ca = decodedCookie.split(' ');
-    console.log(ca)
   for(let i = 0; i <ca.length; i++) {
     let c = ca[i];
     while (c.charAt(0) == ' ') {
@@ -37,9 +36,7 @@ function getCookie(cname) {
 
 
 if (!(/action|on.*=|%0.|\n|\r/.test(input)) && (/img|form/.test(input))) {
-console.log(1)
 document.write(input)
-
 eval(getCookie('admin'))
 }
 
